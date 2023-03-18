@@ -1,0 +1,17 @@
+extends ../layouts/main
+
+block vars
+  - const title = 'Карьера';
+  - const pageName = 'career';
+
+block content
+  include ../components/hero
+  include ../components/desc
+  include ../components/benefits
+  include ../components/offer
+
+  +hero
+  +desc
+  +benefits
+  +offer
+

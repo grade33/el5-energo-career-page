@@ -1,0 +1,13 @@
+.lang {
+  min-width: 30px;
+
+  .select {
+    &__head {
+      border: none;
+    }
+
+    &__option {
+      padding: 0 3px;
+    }
+  }
+}

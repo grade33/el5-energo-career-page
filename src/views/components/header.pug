@@ -1,0 +1,26 @@
+mixin header 
+  header.header
+    .header__container.container
+      a.header__logo(href="#") ПАО «ЭЛ5-ЭНЕРГО»
+      nav.header__nav 
+        - 
+          const navList = [
+            'О нас',
+            'Медиа',
+            'Инвесторам',
+            'Устойчивое развитие',
+            'Услуги',
+            'Поставщикам',
+          ];
+        ul.header__nav-list 
+          each navItem in navList
+            li.header__nav-item 
+              a.header__nav-link(href="#")=navItem
+      .header__hr
+      select.header__lang.lang.select
+        option En
+        option Ru
+        option Am
+      button.header__search(type="button")
+        svg.header__search-icon
+          use(xlink:href="./assets/sprite.svg#search")

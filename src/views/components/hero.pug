@@ -1,0 +1,19 @@
+mixin hero 
+  section.hero
+    .hero__bg
+      img.hero__bg-img(src="@/assets/img/hero-bg.png", alt="")
+    .hero__container.container
+      ul.hero__list 
+        li.hero__item
+          svg.hero__icon
+            use(xlink:href="./assets/sprite.svg#hero--icon-1")
+          span.hero__name
+            strong.hero__name_bold 1200 сотрудников 
+            | уже заряжают энергией ЭЛ5-Энерго
+        li.hero__item
+          svg.hero__icon
+            use(xlink:href="./assets/sprite.svg#hero--icon-2")
+          span.hero__name
+            strong.hero__name_bold ТОП-3
+            | лучших работодателей России*
+      p.hero__cite * по данным рейтинга РБК (ноябрь 2022 г.)
