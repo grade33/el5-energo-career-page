@@ -1,3 +1,6 @@
+// Styles
+@use './vendor/style.css';
+
 //  Base
 @use './base/reset';
 @use './base/grid';
@@ -9,13 +12,15 @@
 //  Partials
 @use './base/base';
 @use './partials/lang';
+@use './partials/link';
 
 //  Components
 @use './components/header';
-@use './components/footer';
 @use './components/hero';
 @use './components/desc';
 @use './components/benefits';
 @use './components/offer';
-
-//  Pages
+@use './components/internship';
+@use './components/mentoring';
+@use './components/dynasties';
+@use './components/inclusion';

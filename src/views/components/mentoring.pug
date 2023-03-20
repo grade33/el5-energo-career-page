@@ -1,0 +1,40 @@
+include ../partials/link
+
+mixin mentoring
+  section.mentoring.section
+    .mentoring__container.container
+      .mentoring__text-block
+        h2.mentoring__title.section__title Наставничество
+        span.mentoring__subtitle Сохраняем и умножаем знания
+      .mentoring__content
+        ul.mentoring__list 
+          -
+            const mentorList = [
+              {
+                src: '@/assets/img/mentoring/mentor-1.png',
+                name: 'Светлана Кулагина',
+                desc: 'Более 10 лет работает на Невиномысской ГРЭС и является наставником для молодых работников. Она обучает новичков в химической лаборатории.',
+              },
+              {
+                src: '@/assets/img/mentoring/mentor-2.png',
+                name: 'Виталий Юрьевич',
+                desc: 'В профессии более 30 лет. Обладая таким весомым опытом он тем не менее продолжает учиться и развиваться.',
+              },
+              {
+                src: '@/assets/img/mentoring/mentor-3.png',
+                name: 'Наталья Демченко',
+                desc: 'Ведущий инженер по эксплуатации химического оборудования Невиномысской ГРЭС.',
+              },
+              {
+                src: '@/assets/img/mentoring/mentor-4.png',
+                name: 'Юлия Эбель',
+                desc: 'Инженер по эксплуатации химического оборудования Среднеуральской ГРЭС.',
+              },
+            ];
+          each mentor in mentorList
+            li.mentoring__item
+              img.mentoring__img(src=mentor.src, alt="")
+              .mentoring__item-text-block 
+                h3.mentoring__name=mentor.name
+                p.mentoring__desc=mentor.desc
+        +link('Все наставники')

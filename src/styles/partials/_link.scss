@@ -1,0 +1,19 @@
+@use '../utils/variables' as vars;
+@use '../utils/mixins' as mix;
+@use '../utils/functions' as fn;
+
+.link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  width: fit-content;
+  color: vars.$red-light;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.35;
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}

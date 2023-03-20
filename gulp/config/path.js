@@ -17,7 +17,7 @@ exports.path = {
   },
   src: {
     markup: `${srcFolder}/views/pages/**/*.pug`,
-    styles: `${srcFolder}/styles/*.scss`,
+    styles: `${srcFolder}/styles/*.{css,scss}`,
     scripts: `${srcFolder}/scripts/*.js`,
     images: `${srcFolder}/assets/img/**/*.{webp,jpg,jpeg,png,svg,gif}`,
     sprite: `${srcFolder}/assets/icons/**/*.svg`,
@@ -25,7 +25,7 @@ exports.path = {
   },
   watch: {
     markup: `${srcFolder}/views/**/*.pug`,
-    styles: `${srcFolder}/styles/**/*.scss`,
+    styles: `${srcFolder}/styles/**/*.{css,scss}`,
     scripts: `${srcFolder}/scripts/**/*.js`,
     images: `${srcFolder}/assets/img/**/*.*`,
     sprite: `${srcFolder}/assets/icons/**/*.*`,

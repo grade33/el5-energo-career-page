@@ -106,9 +106,6 @@ var Select = /*#__PURE__*/Select_createClass(function Select(selector) {
 ;// CONCATENATED MODULE: ./src/scripts/app.js
 
 
-
-
-
 // Select
 new Select('.select'); // eslint-disable-line
 /******/ })()

@@ -3,7 +3,6 @@ const path = require('path');
 const ESLintPlugin = require('eslint-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCSSAssetsPlugin = require('css-minimizer-webpack-plugin');
-const StylelintBarePlugin = require('stylelint-bare-webpack-plugin');
 
 const isDev = process.env.NODE_ENV !== 'production';
 
@@ -28,7 +27,7 @@ module.exports = {
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'),
+      '@': path.resolve(__dirname, './src/assets'),
     },
   },
   optimization: {
@@ -46,17 +45,15 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'postcss-loader',
           'sass-loader',
         ],
       }
     ],
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: 'assets/styles/[name].css',
-    }),
     new ESLintPlugin(),
-    isDev ? null : new StylelintBarePlugin(),
-  ].filter(Boolean),
+    new MiniCssExtractPlugin({
+      filename: 'assets/styles/libs.css',
+    }),
+  ],
 };

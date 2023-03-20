@@ -1,0 +1,28 @@
+@use '../utils/mixins' as mix;
+@use '../utils/variables' as vars;
+@use '../utils/functions' as fn;
+
+.inclusion {
+  &__container {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+
+    @media (max-width: vars.$xxl) {
+      flex-direction: column;
+    }
+  }
+
+  &__img {
+    @media (max-width: vars.$xxl) {
+      order: 2;
+    }
+  }
+
+  &__title {
+    margin-top: 40px;
+    @media (max-width: vars.$xxl) {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+include ../partials/link
+
+mixin dynasties
+  section.dynasties.section 
+    .dynasties__container.container
+      h2.dynasties__title.section__title 
+      ul.dynasties__list 
+        -
+          const dynastiesList = [
+            {
+              src: '@/assets/img/dynasties/dynasty-1.jpg',
+              name: 'Сычевы-Баклановы',
+              desc: 'Представители этой династии уже в общей сложности 122 года работают на Конаковской ГРЭС',
+              years: '122',
+              yearsName: 'года',
+            },
+            {
+              src: '@/assets/img/dynasties/dynasty-2.jpg',
+              name: 'Меховских-Логиновых-Заиченко-Глущенко',
+              desc: 'Общий стаж работы её представителей на электростанции составляет почти 200 лет',
+              years: '200',
+              yearsName: 'лет',
+            },
+            {
+              src: '@/assets/img/dynasties/dynasty-3.jpg',
+              name: 'Аржанниковых-Слободчиковы',
+              desc: 'которая уже 120 лет трудится на Среднеуральской ГРЭС, один из примеров профессионализма и надёжности',
+              years: '120',
+              yearsName: 'лет',
+            },
+            {
+              src: '@/assets/img/dynasties/dynasty-4.jpg',
+              name: 'Катюшины',
+              desc: 'Совместно уже 131 год трудится на Конаковской ГРЭС',
+              years: '131',
+              yearsName: 'год',
+            },
+          ];
+        each dynasty in dynastiesList
+          li.dynasties__item
+            .dynasties__item-content
+              img.dynasties__img(src=dynasty.src, alt="")
+              .dynasties__years-block-mobile
+                span.dynasties__years=dynasty.years
+                | 
+                span.dynasties__years-name=dynasty.yearsName
+              .dynasties__text-block 
+                h3.dynasties__name=dynasty.name
+                p.dynasties__desc=dynasty.desc
+            .dynasties__years-block
+              span.dynasties__years=dynasty.years
+              span.dynasties__years-line
+              span.dynasties__years-name=dynasty.yearsName
+      +link('Все трудовые династии')
+      

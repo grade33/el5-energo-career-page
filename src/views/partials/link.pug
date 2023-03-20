@@ -1,0 +1,5 @@
+mixin link(text, className)
+  a.link(href="#") 
+    span=text 
+    svg.link__icon
+      use(xlink:href="./assets/sprite.svg#chevron-right")
