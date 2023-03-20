@@ -18,17 +18,17 @@
     }
   }
 
-  &__item {
+  &__link {
     display: flex;
     gap: 38px;
     align-items: flex-start;
+  }
 
-    &-content {
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      gap: fn.clip-max(8, 24);
-    }
+  &__item-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: fn.clip-max(8, 24);
   }
 
   &__img {

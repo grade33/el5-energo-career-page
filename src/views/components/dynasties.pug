@@ -3,7 +3,7 @@ include ../partials/link
 mixin dynasties
   section.dynasties.section 
     .dynasties__container.container
-      h2.dynasties__title.section__title 
+      h2.dynasties__title.section__title Трудовые династии
       ul.dynasties__list 
         -
           const dynastiesList = [
@@ -38,18 +38,19 @@ mixin dynasties
           ];
         each dynasty in dynastiesList
           li.dynasties__item
-            .dynasties__item-content
-              img.dynasties__img(src=dynasty.src, alt="")
-              .dynasties__years-block-mobile
+            a.dynasties__link(href="#") 
+              .dynasties__item-content
+                img.dynasties__img(src=dynasty.src, alt="")
+                .dynasties__years-block-mobile
+                  span.dynasties__years=dynasty.years
+                  | 
+                  span.dynasties__years-name=dynasty.yearsName
+                .dynasties__text-block 
+                  h3.dynasties__name=dynasty.name
+                  p.dynasties__desc=dynasty.desc
+              .dynasties__years-block
                 span.dynasties__years=dynasty.years
-                | 
+                span.dynasties__years-line
                 span.dynasties__years-name=dynasty.yearsName
-              .dynasties__text-block 
-                h3.dynasties__name=dynasty.name
-                p.dynasties__desc=dynasty.desc
-            .dynasties__years-block
-              span.dynasties__years=dynasty.years
-              span.dynasties__years-line
-              span.dynasties__years-name=dynasty.yearsName
       +link('Все трудовые династии')
       

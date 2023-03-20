@@ -2,6 +2,10 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
+body {
+  margin: 0 !important;
+}
+
 .app {
   display: flex;
   flex-direction: column;

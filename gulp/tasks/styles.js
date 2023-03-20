@@ -29,5 +29,5 @@ exports.styles = function styles() {
     .pipe(dest(path.build.styles, {
       sourcemaps: isDev
     }))
-    .pipe(plugins.browsersync.stream())
+    .pipe(plugins.browsersync.stream());
 }

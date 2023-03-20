@@ -3,6 +3,8 @@
 @use '../utils/functions' as fn;
 
 .inclusion {
+  margin-bottom: fn.clip-max(100, 208);
+
   &__container {
     display: flex;
     gap: 32px;

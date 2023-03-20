@@ -33,8 +33,9 @@ mixin mentoring
             ];
           each mentor in mentorList
             li.mentoring__item
-              img.mentoring__img(src=mentor.src, alt="")
-              .mentoring__item-text-block 
-                h3.mentoring__name=mentor.name
-                p.mentoring__desc=mentor.desc
+              a.mentoring__link(href="#") 
+                img.mentoring__img(src=mentor.src, alt="")
+                .mentoring__item-text-block 
+                  h3.mentoring__name=mentor.name
+                  p.mentoring__desc=mentor.desc
         +link('Все наставники')
