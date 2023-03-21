@@ -10,7 +10,7 @@
     gap: 32px;
     justify-content: center;
 
-    @media (max-width: vars.$xxl) {
+    @media (max-width: vars.$md) {
       flex-direction: column;
     }
   }

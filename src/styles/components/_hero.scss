@@ -8,7 +8,7 @@
   padding: 48px 0 24px;
   color: vars.$white;
   font-weight: 400;
-  font-size: fn.clip-min(20, 22);
+  font-size: 1.375rem;
   line-height: 1.32;
   background: #26b9ea;
 
@@ -49,7 +49,7 @@
     margin-top: auto;
     margin-bottom: fn.clip-min(24, 40);
     font-weight: 700;
-    font-size: fn.clip-min(28, 46);
+    font-size: 2.875rem;
     line-height: 1.32;
   }
 
@@ -82,7 +82,7 @@
     margin-top: 67px;
     margin-left: calc(-1 * fn.free-place() + 32px);
     font-weight: 300;
-    font-size: 12px;
+    font-size: 0.75rem;
     line-height: 1.32;
     opacity: 0.6;
   }

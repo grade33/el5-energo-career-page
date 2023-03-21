@@ -2,6 +2,10 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
+html {
+  font-size: fn.clip-min(13, 16);
+}
+
 body {
   margin: 0 !important;
 }
@@ -12,7 +16,7 @@ body {
   min-height: 100vh;
   color: vars.$black;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-family: Roobert, sans-serif;
   font-style: normal;
   line-height: 1.35;
@@ -32,7 +36,7 @@ body {
 
   &__title {
     font-weight: 700;
-    font-size: 28px;
+    font-size: 1.75rem;
     line-height: 1.35;
   }
 }
@@ -44,7 +48,7 @@ body {
   padding: 12px 24px;
   color: vars.$white;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.35;
   background: vars.$red-light;
   border-radius: 10px;
