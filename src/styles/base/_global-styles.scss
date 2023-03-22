@@ -1,0 +1,17 @@
+@mixin global-styles {
+  //  Partials
+  @import './base/base';
+  @import './partials/lang';
+  @import './partials/link';
+  
+  //  Components
+  @import './components/header';
+  @import './components/hero';
+  @import './components/desc';
+  @import './components/benefits';
+  @import './components/offer';
+  @import './components/internship';
+  @import './components/mentoring';
+  @import './components/dynasties';
+  @import './components/inclusion';
+}

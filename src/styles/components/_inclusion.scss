@@ -2,29 +2,31 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
-.inclusion {
-  margin-bottom: fn.clip-max(100, 208);
+main.main.career-page {
+  .inclusion {
+    margin-bottom: fn.clip-max(100, 208);
 
-  &__container {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
+    &__container {
+      display: flex;
+      gap: 32px;
+      justify-content: center;
 
-    @media (max-width: vars.$md) {
-      flex-direction: column;
+      @media (max-width: vars.$md) {
+        flex-direction: column;
+      }
     }
-  }
 
-  &__img {
-    @media (max-width: vars.$xxl) {
-      order: 2;
+    &__img {
+      @media (max-width: vars.$xxl) {
+        order: 2;
+      }
     }
-  }
 
-  &__title {
-    margin-top: 40px;
-    @media (max-width: vars.$xxl) {
-      margin: 0;
+    &__title {
+      margin-top: 40px;
+      @media (max-width: vars.$xxl) {
+        margin: 0;
+      }
     }
   }
 }

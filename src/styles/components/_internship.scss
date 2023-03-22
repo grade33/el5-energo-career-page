@@ -2,27 +2,29 @@
 @use '../utils/mixins' as mix;
 @use '../utils/functions' as fn;
 
-.internship {
-  &__container {
-    display: flex;
-    gap: fn.clip-max(16, 32);
-    justify-content: center;
-    @media (max-width: vars.$md) {
+main.main.career-page {
+  .internship {
+    &__container {
+      display: flex;
+      gap: fn.clip-max(16, 32);
+      justify-content: center;
+      @media (max-width: vars.$md) {
+        flex-direction: column;
+        justify-content: unset;
+      }
+    }
+
+    &__img {
+      @media (max-width: vars.$md) {
+        order: 2;
+      }
+    }
+
+    &__text-block {
+      display: flex;
       flex-direction: column;
-      justify-content: unset;
+      gap: 16px;
+      margin-top: 4px;
     }
-  }
-
-  &__img {
-    @media (max-width: vars.$md) {
-      order: 2;
-    }
-  }
-
-  &__text-block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    margin-top: 4px;
   }
 }

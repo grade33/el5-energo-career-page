@@ -4,7 +4,6 @@
 //  Base
 @use './base/reset';
 @use './base/grid';
-@use './base/typography';
 
 // Vendor
 @use './vendor/select';
@@ -15,7 +14,6 @@
 @use './partials/link';
 
 //  Components
-@use './components/header';
 @use './components/hero';
 @use './components/desc';
 @use './components/benefits';

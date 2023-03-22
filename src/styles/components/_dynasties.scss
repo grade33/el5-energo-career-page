@@ -2,98 +2,100 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
-.dynasties {
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: fn.clip-max(32, 56);
-  }
-
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: fn.clip-max(32, 72) fn.clip-max(32, 66);
-    @media (max-width: vars.$lg) {
-      grid-template-columns: 1fr;
-    }
-  }
-
-  &__link {
-    display: flex;
-    gap: 38px;
-    align-items: flex-start;
-  }
-
-  &__item-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: fn.clip-max(8, 24);
-  }
-
-  &__img {
-    width: 100%;
-  }
-
-  &__text-block {
-    display: flex;
-    flex-direction: column;
-  }
-
-  &__name {
-    font-weight: 700;
-    font-size: 1.125rem;
-    line-height: 1.35;
-  }
-
-  &__desc {
-    font-weight: 400;
-    font-size: 0.875rem;
-    line-height: 1.4;
-  }
-
-  &__years-block {
-    display: flex;
-    flex-direction: column;
-    @media (max-width: vars.$sm) {
-      display: none;
+main.main.career-page {
+  .dynasties {
+    &__container {
+      display: flex;
+      flex-direction: column;
+      gap: fn.clip-max(32, 56);
     }
 
-    &-mobile {
-      @media (min-width: vars.$min-sm) {
-        display: none;
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: fn.clip-max(32, 72) fn.clip-max(32, 66);
+      @media (max-width: vars.$lg) {
+        grid-template-columns: 1fr;
       }
     }
-  }
 
-  &__years {
-    color: #5d7185;
-    font-weight: 700;
-    font-size: 3.5rem;
-    line-height: 1.4;
-  }
-
-  &__years-line {
-    position: relative;
-
-    &::before {
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 167px;
-      height: 1px;
-      background: vars.$black;
-      content: '';
+    &__link {
+      display: flex;
+      gap: 38px;
+      align-items: flex-start;
     }
-  }
 
-  &__years-name {
-    margin-left: 20px;
-    font-weight: 400;
-    font-size: 1.9375rem;
-    line-height: 1.4;
-    @media (max-width: vars.$sm) {
-      margin: 0;
+    &__item-content {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      gap: fn.clip-max(8, 24);
+    }
+
+    &__img {
+      width: 100%;
+    }
+
+    &__text-block {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__name {
+      font-weight: 700;
+      font-size: .9rem;
+      line-height: 1.35;
+    }
+
+    &__desc {
+      font-weight: 400;
+      font-size: .7rem;
+      line-height: 1.4;
+    }
+
+    &__years-block {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: vars.$sm) {
+        display: none;
+      }
+
+      &-mobile {
+        @media (min-width: vars.$min-sm) {
+          display: none;
+        }
+      }
+    }
+
+    &__years {
+      color: #5d7185;
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 1.4;
+    }
+
+    &__years-line {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 167px;
+        height: 1px;
+        background: vars.$black;
+        content: '';
+      }
+    }
+
+    &__years-name {
+      margin-left: 20px;
+      font-weight: 400;
+      font-size: 1.55rem;
+      line-height: 1.4;
+      @media (max-width: vars.$sm) {
+        margin: 0;
+      }
     }
   }
 }

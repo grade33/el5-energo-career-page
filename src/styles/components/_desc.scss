@@ -2,16 +2,18 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
-.desc {
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.35;
+main.main.career-page {
+  .desc {
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.35;
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 27px;
-    max-width: 786px;
-    margin: 0 auto;
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 27px;
+      max-width: 786px;
+      margin: 0 auto;
+    }
   }
 }

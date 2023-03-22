@@ -2,26 +2,38 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
-.offer {
-  padding: 66px 0;
-  color: vars.$white;
-  background: url('@/assets/img/offer-bg.jpg') no-repeat center / cover;
+main.main.career-page {
+  .offer {
+    position: relative;
+    padding: 66px 0;
+    color: vars.$white;
 
-  &__container {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
+    &__bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
 
-  &__text-block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+    &__container {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
 
-  &__desc {
-    font-weight: 400;
-    font-size: 1.375rem;
-    line-height: 1.35;
+    &__text-block {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    &__desc {
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 1.35;
+    }
   }
 }

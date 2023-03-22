@@ -2,18 +2,20 @@
 @use '../utils/mixins' as mix;
 @use '../utils/functions' as fn;
 
-.link {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-  width: fit-content;
-  color: vars.$red-light;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 1.35;
+main.main.career-page {
+  .link {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+    color: vars.$red-light;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.35;
 
-  &__icon {
-    width: 24px;
-    height: 24px;
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
