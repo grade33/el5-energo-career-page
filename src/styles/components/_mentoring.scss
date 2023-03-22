@@ -46,6 +46,13 @@
       display: flex;
       flex-direction: column;
       gap: 32px;
+
+      &:hover,
+      &:focus-visible {
+        .mentoring__name {
+          color: vars.$red;
+        }
+      }
     }
 
     &__item-text-block {
@@ -60,8 +67,9 @@
 
     &__name {
       font-weight: 700;
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1.35;
+      transition: color 0.3s ease-in-out;
     }
 
     &__desc {

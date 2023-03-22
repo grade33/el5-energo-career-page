@@ -23,6 +23,13 @@
       display: flex;
       gap: 38px;
       align-items: flex-start;
+
+      &:hover,
+      &:focus-visible {
+        .dynasties__name {
+          color: vars.$red;
+        }
+      }
     }
 
     &__item-content {
@@ -43,13 +50,14 @@
 
     &__name {
       font-weight: 700;
-      font-size: .9rem;
+      font-size: 0.9rem;
       line-height: 1.35;
+      transition: color 0.3s ease-in-out;
     }
 
     &__desc {
       font-weight: 400;
-      font-size: .7rem;
+      font-size: 0.7rem;
       line-height: 1.4;
     }
 

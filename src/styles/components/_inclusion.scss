@@ -6,11 +6,17 @@
   .inclusion {
     margin-bottom: fn.clip-max(100, 208);
 
-    &__container {
+    &__content {
       display: flex;
       gap: 32px;
       justify-content: center;
+      transition: color 0.3s ease-in-out;
 
+      &:hover,
+      &:focus-visible {
+        color: vars.$red;
+      }
+      
       @media (max-width: vars.$md) {
         flex-direction: column;
       }
