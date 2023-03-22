@@ -2,7 +2,7 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
-main.main.career-page {
+.main.career-page {
   .inclusion {
     margin-bottom: fn.clip-max(100, 208);
 

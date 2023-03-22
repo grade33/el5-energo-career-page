@@ -2,7 +2,7 @@
 @use '../utils/mixins' as mix;
 @use '../utils/functions' as fn;
 
-main.main.career-page {
+.main.career-page {
   .internship {
     &__container {
       display: flex;

@@ -2,7 +2,7 @@
 @use '../utils/mixins' as mix;
 @use '../utils/functions' as fn;
 
-main.main.career-page {
+.main.career-page {
   .hero {
     position: relative;
     padding: fn.clip-min(48, 101) 0 24px;

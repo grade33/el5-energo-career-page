@@ -2,7 +2,7 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
-main.main.career-page {
+.main.career-page {
   .benefits {
     &__container {
       display: flex;

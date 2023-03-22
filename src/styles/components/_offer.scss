@@ -2,7 +2,7 @@
 @use '../utils/variables' as vars;
 @use '../utils/functions' as fn;
 
-main.main.career-page {
+.main.career-page {
   .offer {
     position: relative;
     padding: 66px 0;
@@ -15,8 +15,9 @@ main.main.career-page {
 
         &::before {
           position: absolute;
+          background: linear-gradient(90deg, rgba(34, 34, 34, 70%) 0%, rgba(34, 34, 34, 0%) 123.74%);
+          content: '';
           inset: 0;
-          background: linear-gradient(270deg, rgba(34, 34, 34, 70%) 0%, rgba(34, 34, 34, 0%) 123.74%);
         }
       }
 
